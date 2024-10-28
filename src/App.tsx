@@ -9,12 +9,13 @@ import Table from "./components/treeview/table-tree-view";
 import EmailInput from "./components/email-tags";
 import GanttSideBar from "./components/gantt/sidebar";
 import TableWithFixedColumn from "./components/tabel-example/tabel";
+import { TestBitnoise } from "./components/bitnoise";
 
 function App() {
   const timelineStartDate = '2024-10-10';
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
             {/* <GanttChart/> */}
         <div className="min-h-screen flex flex-col">
           <main className="mx-4 my-10 flex flex-col gap-6">
@@ -22,7 +23,8 @@ function App() {
             {/* <TreeView nodes={node}/> */}
             {/* <Table/> */}
             {/* <EmailInput/> */}
-            <GanttSideBar/>
+            {/* <GanttSideBar/> */}
+            <TestBitnoise />
             {/* <TableWithFixedColumn/> */}
           </main>
         </div>
